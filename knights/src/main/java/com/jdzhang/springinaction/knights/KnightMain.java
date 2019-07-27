@@ -7,28 +7,18 @@
  */
 package com.jdzhang.springinaction.knights;
 
-import org.junit.Test;
-
-import static org.mockito.Mockito.*;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 /**
  * @author zhangjundong
- * @date 2019/7/260:19
- *
- * brave 勇敢
- * knight 骑士
- * embark 从事
- * quest 探索
+ * @date 2019/7/2712:58
  */
-public class BraveKnightTest {
-
-    @Test
-    public void knightShouldEmbarkOnQuest(){
-        //创建Mock Quest
-        Quest mockQuest=mock(Quest.class);
-        //注入 mock Quest
-        BraveKnight knight=new BraveKnight(mockQuest);
+public class KnightMain {
+    public static void main(String[] args) throws Exception{
+        ClassPathXmlApplicationContext context=
+                new ClassPathXmlApplicationContext("knights.xml");
+        Knight knight=context.getBean(Knight.class);
         knight.embarkOnQuest();
-        verify(mockQuest, times(1)).embark();
+        context.close();
     }
 }

@@ -7,20 +7,24 @@
  */
 package com.jdzhang.springinaction.knights;
 
+import java.io.PrintStream;
+
 /**
  * @author zhangjundong
- * @date 2019/7/260:00
+ * @date 2019/7/269:42
+ *
+ * slay 诛戮
+ * dragon 龙
  */
-public class DamselRescuingKnight implements Knight {
+public class SlayDragonQuest implements Quest {
 
-    private RescueDamselQuest rescueDamselQuest;
+    private PrintStream stream;
 
-    public DamselRescuingKnight(){
-        //与RescueDamselQuest紧耦合
-        this.rescueDamselQuest=new RescueDamselQuest();
+    public SlayDragonQuest(PrintStream stream){
+        this.stream=stream;
     }
 
-    public void embarkOnQuest() {
-        rescueDamselQuest.embark();
+    public void embark() {
+        stream.println("Embarking on quest to slay the dragon");
     }
 }
