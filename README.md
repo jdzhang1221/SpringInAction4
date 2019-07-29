@@ -11,7 +11,7 @@
 * bean的生命周期
 * Spring模块分类
 
-## 2. 装配Bean
+## [2. 装配Bean][stereoconfig]
 
 * 自动化装配bean
 * 通过java代码装配
@@ -34,3 +34,4 @@
 * 注入AspectJ切面
 
 [knights]: https://github.com/jdzhang1221/SpringInAction4/tree/master/knights
+[stereoconfig]: https://github.com/jdzhang1221/SpringInAction4/tree/master/stereoconfig
