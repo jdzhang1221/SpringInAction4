@@ -1,4 +1,4 @@
-package com.jdzhang.springinaction.soundssystem;
+package autoconfig.soundssystem;
 
 /**
  * @author zhangjundong

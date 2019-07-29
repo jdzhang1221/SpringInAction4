@@ -5,26 +5,21 @@
  * use it only in accordance with the terms of the license agreement you entered
  * into with Tuhu.cn
  */
-package com.jdzhang.springinaction.soundssystem;
+package autoconfig.soundssystem;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 /**
  * @author zhangjundong
- * @date 2019/7/2823:02
+ * @date 2019/7/2822:25
  */
 @Component
-public class CDPlayer implements MediaPlayer {
+public class SgtPeppers implements CompactDisc {
 
-    private CompactDisc cd;
+    private String title="Sgt. Pepper's Lonely Hearts Club Band";
+    private String artist="The Beatles";
 
-    @Autowired
-    public CDPlayer(CompactDisc cd){
-        this.cd=cd;
-    }
-
-    public void paly() {
-        cd.play();
+    public void play() {
+        System.out.println("Playing "+title+" by "+artist);
     }
 }

@@ -10,7 +10,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.jdzhang.learning</groupId>
-    <artifactId>stereoautoconfig</artifactId>
+    <artifactId>stereoconfig</artifactId>
 
     <properties>
         <spring.group>org.springframework</spring.group>

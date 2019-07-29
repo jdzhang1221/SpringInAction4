@@ -5,7 +5,7 @@
  * use it only in accordance with the terms of the license agreement you entered
  * into with Tuhu.cn
  */
-package com.jdzhang.springinaction.soundssystem;
+package autoconfig.soundssystem;
 
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
