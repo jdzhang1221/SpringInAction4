@@ -11,6 +11,7 @@
     <modules>
         <module>knights</module>
         <module>stereoconfig</module>
+        <module>advancedwiring</module>
     </modules>
 
 
