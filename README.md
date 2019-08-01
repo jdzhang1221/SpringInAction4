@@ -18,7 +18,7 @@
 * 通过XML装配bean
 * 导入和混合配置
 
-## 3. 高级装配
+## [3. 高级装配][advancedwiring]
 
 * 环境与profile
 * 条件化的bean
@@ -35,3 +35,4 @@
 
 [knights]: https://github.com/jdzhang1221/SpringInAction4/tree/master/knights
 [stereoconfig]: https://github.com/jdzhang1221/SpringInAction4/tree/master/stereoconfig
+[advancedwiring]: https://github.com/jdzhang1221/SpringInAction4/tree/master/advancedwiring
