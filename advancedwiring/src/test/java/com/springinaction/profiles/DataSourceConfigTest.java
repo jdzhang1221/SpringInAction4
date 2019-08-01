@@ -22,15 +22,13 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.List;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.*;
 
 /**
  * @author zhangjundong
  * @date 2019/7/310:20
  */
 public class DataSourceConfigTest {
-
 
     @RunWith(SpringJUnit4ClassRunner.class)
     @ContextConfiguration(classes=DataSourceConfig.class)
@@ -51,6 +49,21 @@ public class DataSourceConfigTest {
             });
             assertEquals(1,results.size());
             assertEquals("1:A",results.get(0));
+        }
+    }
+
+    @RunWith(SpringJUnit4ClassRunner.class)
+    @ContextConfiguration(classes = DataSourceConfig.class)
+    @ActiveProfiles("prod")
+    public static class ProductionDataSourceTest{
+
+        @Autowired
+        private DataSource dataSource;
+
+        @Test
+        public void shouldBeEmbeddedDataSource(){
+            //should be null,because there isn't a datasource configured in JNDI
+            assertNull(dataSource);
         }
     }
 }
