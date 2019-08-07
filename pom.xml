@@ -12,6 +12,7 @@
         <module>knights</module>
         <module>stereoconfig</module>
         <module>advancedwiring</module>
+        <module>concert</module>
     </modules>
 
 
