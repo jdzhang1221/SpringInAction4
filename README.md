@@ -26,7 +26,7 @@
 * bean的作用域
 * 运行时植入
 
-## 4. 面向切面的Spring
+## [4. 面向切面的Spring][concert]
 
 * 通过切点来选择连接点
 * 使用注解创建切面
@@ -36,3 +36,4 @@
 [knights]: https://github.com/jdzhang1221/SpringInAction4/tree/master/knights
 [stereoconfig]: https://github.com/jdzhang1221/SpringInAction4/tree/master/stereoconfig
 [advancedwiring]: https://github.com/jdzhang1221/SpringInAction4/tree/master/advancedwiring
+[concert]: https://github.com/jdzhang1221/SpringInAction4/tree/master/concert 
