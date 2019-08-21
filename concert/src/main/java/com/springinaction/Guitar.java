@@ -7,10 +7,13 @@
  */
 package com.springinaction;
 
+import org.springframework.stereotype.Component;
+
 /**
  * @author zhangjundong
  * @date 2019/8/811:35
  */
+@Component
 public class Guitar implements Instrument {
 
     public void play() {

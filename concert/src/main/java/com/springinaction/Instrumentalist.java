@@ -7,10 +7,14 @@
  */
 package com.springinaction;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
 /**
  * @author zhangjundong
  * @date 2019/8/811:30
  */
+@Component
 public class Instrumentalist implements Performer {
     public void perform() {
         instrument.play();
@@ -18,6 +22,7 @@ public class Instrumentalist implements Performer {
 
     private Instrument instrument;
 
+    @Autowired
     public void setInstrument(Instrument instrument){
         this.instrument=instrument;
     }

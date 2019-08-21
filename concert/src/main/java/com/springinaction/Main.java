@@ -8,6 +8,7 @@
 package com.springinaction;
 
 import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 /**
@@ -17,8 +18,12 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class Main {
 
     public static void main(String[] args){
-        ApplicationContext ctx=new ClassPathXmlApplicationContext("spring-idol.xml");
+       /* ApplicationContext ctx=new ClassPathXmlApplicationContext("spring-idol.xml");
         Performer performer=(Performer)ctx.getBean("eddie");
+        performer.perform();*/
+
+        ApplicationContext ctx=new AnnotationConfigApplicationContext(Audience.class);
+        Performer performer=(Performer)ctx.getBean("instrumentalist",Instrumentalist.class);
         performer.perform();
     }
 }

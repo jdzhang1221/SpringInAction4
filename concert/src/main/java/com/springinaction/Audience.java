@@ -9,11 +9,18 @@ package com.springinaction;
 
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.*;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.EnableAspectJAutoProxy;
+import org.springframework.stereotype.Component;
 
 /**
  * @author zhangjundong
  * @date 2019/8/811:37
  */
+@Configuration
+@EnableAspectJAutoProxy(proxyTargetClass = true)
+@ComponentScan
 @Aspect
 public class Audience {
 
