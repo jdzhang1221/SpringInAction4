@@ -23,7 +23,8 @@ public class Main {
         performer.perform();*/
 
         ApplicationContext ctx=new AnnotationConfigApplicationContext(Audience.class);
-        Performer performer=(Performer)ctx.getBean("instrumentalist",Instrumentalist.class);
+       // Performer performer=(Performer)ctx.getBean("instrumentalist",Instrumentalist.class);
+        Performer performer=(Performer)ctx.getBean(Performer.class);
         performer.perform();
     }
 }

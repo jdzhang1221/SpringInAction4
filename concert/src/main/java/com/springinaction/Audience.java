@@ -19,7 +19,8 @@ import org.springframework.stereotype.Component;
  * @date 2019/8/811:37
  */
 @Configuration
-@EnableAspectJAutoProxy(proxyTargetClass = true)
+//@EnableAspectJAutoProxy(proxyTargetClass = true)
+@EnableAspectJAutoProxy
 @ComponentScan
 @Aspect
 public class Audience {
